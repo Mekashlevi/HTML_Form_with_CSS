@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Information (index) Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="range"],
+input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+}
+
+
+input[type="color"],
+input[type="number"],
+input[type="url"], select {
+    width: 30%;
+    padding: 2px;
+    display: block;
+}
+
+
+button[type="submit"] {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 50px;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: lightgray;
+}
+
+label > output {
+    font-weight: bold;
+    margin-left: 10px;
+}
+textarea {
+  width: 95%;
+}
+
+/* Results Page Style */
+#results {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

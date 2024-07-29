@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Levi Mekash">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Form_with_CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <h1>User Information</h1>
+
+    <form action="results.html" method="GET">
+        <label>
+            First Name:
+            <input type="text" name="First Name" id="firstname">
+        </label>
+
+        <label>
+            Last Name:
+            <input type="text" name="Last Name" id="lastname">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="Email" id="email">
+        </label>
+
+        <label>
+            Phone Number:
+            <input type="tel" name="Phone Number" id="phonenumber">
+        </label>
+
+        <label>
+            Password:
+            <input type="password" name="Password" id="password">
+        </label>
+
+        <label>
+            Date of Birth:
+            <input type="date" name="DOB" id="dob">
+        </label>
+
+        <label>
+            Favorite Color:
+            <input type="color" name="Color" id="color">
+        </label>
+
+        <label>
+            <div>
+            Do you prefer Daytime or Nighttime:
+            <br>
+            <input type="radio" name="Daytime Nighttime" value="daytime"> Daytime</label>
+            <input type="radio" name="Daytime Nighttime" value="nighttime"> Nighttime</label>
+            </div>
+        </label>
+        
+        <label>
+            Favorite Season: <br>
+            <input type="checkbox" name="Favorite_Season" value="spring"> Spring
+            <input type="checkbox" name="Favorite_Season" value="summer"> Summer
+            <input type="checkbox" name="Favorite_Season" value="fall"> Fall
+            <input type="checkbox" name="Favorite_Season" value="winter"> Winter
+        </label>
+
+        <label>
+            Hobbies: <br>
+            <input type="checkbox" name="Hobby" id="hobby1" value="reading">Reading
+            <input type="checkbox" name="Hobby" id="hobby2" value="sports">Sports
+            <input type="checkbox" name="Hobby" id="hobby3" value="music">Music
+            <input type="checkbox" name="Hobby" id="hobby4" value="movies">Movies
+            <input type="checkbox" name="Hobby" id="hobby5" value="gaming">Gaming
+            <input type="checkbox" name="Hobby" id="hobby6" value="traveling">Traveling
+            <input type="checkbox" name="Hobby" id="hobby7" value="other">Other
+        </label>
+
+        <label>
+            Age:
+            <input type="number" name="Age" id="ageNumber" min="18" max="130" step="2" placeholder="Enter Age" oninput="ageRange.value = this.value">
+            <input type="range" name="Age" id="ageRange" min="18" max="130" oninput="ageNumber.value = this.value">
+        </label>
+
+        <label>
+            Favorite Weekday:
+            <select name="Favorite Weekday" id="favorite weekday">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+        </label>
+        
+        <label>
+            Gender:
+            <select name="Gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+
+        <label>
+            Country:
+            <select name="Country" id="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+                <option value="portugal">Portugal</option>
+                <option value="brazil">Brazil</option>
+                <option value="argentina">Argentina</option>
+                <option value="russia">Russia</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="thailand">Thailand</option>
+                <option value="philippines">Philippines</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="singapore">Singapore</option>
+                <option value="hongkong">Hong Kong</option>
+                <option value="taiwan">Taiwan</option>
+                <option value="newzealand">New Zealand</option>
+                <option value="southafrica">South Africa</option>
+                <option value="egypt">Egypt</option>
+                <option value="iraq">Iraq</option>
+            </select>
+        </label>
+
+        <label>
+            Bio:
+            <textarea name="Bio" id="bio" rows="10" cols="79%"></textarea>
+        </label>
+
+        <label>
+            Url:
+            <input type="url" name="webUrl" id="webUrl">
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
